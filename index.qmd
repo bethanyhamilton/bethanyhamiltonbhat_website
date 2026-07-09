@@ -12,7 +12,7 @@ Coming soon!
 
 
 <center>
-<a href="about.qmd">
+<a href="lilguy.qmd">
 <img src="images/flip.gif" border="0" width="450" height="41">
 </a>
 </center>
