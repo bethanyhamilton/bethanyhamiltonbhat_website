@@ -3,3 +3,18 @@ title: "About"
 ---
 
 Coming soon!
+
+```{=html}
+
+
+
+<center>
+<a href="about.qmd">
+<img src="images/lilguy.gif" border="0" width="41" height="41">
+</a>
+</center>
+
+
+
+```
+Just had to click on the little guy, huh?

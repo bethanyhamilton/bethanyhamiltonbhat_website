@@ -6,3 +6,17 @@ Coming soon!
 
 
 ![This page is under construction. In the meantime, enjoy this picture of my cat Hema](images/hema.jpg){fig-align="center"}
+
+```{=html}
+
+
+
+<center>
+<a href="about.qmd">
+<img src="images/flip.gif" border="0" width="450" height="41">
+</a>
+</center>
+
+
+
+```
