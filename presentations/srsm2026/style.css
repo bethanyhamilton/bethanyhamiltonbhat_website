@@ -1,0 +1,58 @@
+a:link { 
+  color: #9CAECC;
+} 
+
+a:active{
+  color:red;
+}
+
+.reveal h2 {
+  font-weight: normal;
+}
+
+a:visited { 
+  color: #9CAECC;
+} 
+
+a:hover { 
+  color: #A79C94;
+} 
+
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.reveal .slide-logo {
+  max-height: 2em !important;
+   
+  opacity: 0.3;
+  
+  transition: opacity 0.3s ease;
+}
+
+.sectionhead {
+  font-size: 0.5em;
+  text-align: center;
+  color: $presentation-heading-color;
+  font-family: $presentation-heading-font;
+  background-color: $body-bg;
+  margin: 1px;
+  padding: 2px 2px 2px 2px;
+  width: 120px;
+  border-left: 10px solid;
+}
+
+.reveal .slides section > h1,
+.reveal .slides section > h2,
+.reveal .slides section > h3,
+.reveal .slides section > h4 {
+  margin-bottom: 0.8em !important;
+}
+
+.reveal table thead th {
+  background-color: #E6EAF2;
+}
+

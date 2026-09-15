@@ -2,10 +2,18 @@
 title: "Bethany Hamilton Bhat"
 ---
 
-Coming soon!
+<iframe
+  src="CV_BHBhat.pdf"
+  style="width: 100%; height: 85vh !important; min-height: 700px; border: 1px solid #ccc;"
+  frameborder="0">
+</iframe>
 
+<p style="text-align: center;">
+  <a href="CV_BHBhat.pdf" target="_blank">
+    Open PDF in a new window
+  </a>
+</p>
 
-![This page is under construction. In the meantime, enjoy this picture of my cat Hema](images/hema.jpg){fig-align="center"}
 
 ```{=html}
 

@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "presentations.html",
+    "href": "presentations.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "Annual Meeting of the Society for Research Synthesis, 2026"
+  },
+  {
     "objectID": "lilguy.html",
     "href": "lilguy.html",
     "title": "Bethany Hamilton Bhat",
@@ -18,6 +25,146 @@
     "href": "index.html",
     "title": "Bethany Hamilton Bhat",
     "section": "",
-    "text": "Coming soon!\n\n\n\nThis page is under construction. In the meantime, enjoy this picture of my cat Hema"
+    "text": "Open PDF in a new window"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#motivation",
+    "href": "presentations/srsm2026/srsm2026.html#motivation",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Motivation",
+    "text": "Motivation\nCommon measures for two-group comparisons on quantitative outcomes:\n\nMean differences\nStandardized mean differences (\\(d\\))\nLog ratio of means (lnRR)\nMeasures of stochastic superiority (\\(\\theta\\))"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#stochastic-superiority-theta",
+    "href": "presentations/srsm2026/srsm2026.html#stochastic-superiority-theta",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Stochastic Superiority (\\(\\theta\\))",
+    "text": "Stochastic Superiority (\\(\\theta\\))\nThe probability that a randomly selected person from one group has a higher outcome than a randomly selected person from another group\n\\[\\theta = P(Y&gt;X)+\\frac{1}{2}P(Y=X)\\]\n\n\\(\\frac{1}{2}P(Y=X)\\) term handles ties\nSeveral parametric and non-parametric estimators:\n\nCLES, AUC, Wilcoxon U, Concordance probability, Cliff’s \\(\\delta\\)\n\n\nMcGraw and Wong (1992);Hanley and McNeil (1982); DeLong et al. (1988);Newson (2002);Cliff (1993)"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#estimating-theta-cles",
+    "href": "presentations/srsm2026/srsm2026.html#estimating-theta-cles",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Estimating \\(\\theta\\): CLES",
+    "text": "Estimating \\(\\theta\\): CLES\n\nProposed by McGraw and Wong (1992) under normality and homoscedasticity\nUnder these assumptions, \\(d\\) completely determines any measure of overlap between two distributions\n\n\\[\\hat{\\theta} = \\Phi\\left(\\frac{d}{\\sqrt{2}}\\right), \\quad \\mathrm{var}(\\hat{\\theta}) = \\frac{e^{-d^2 / 2}}{4\\pi} \\left(\\frac{1}{n_1} + \\frac{1}{n_2} + \\frac{d^2}{2(n_1+n_2)} \\right)\\]\n\nThere is no comprehensive evaluation on how to best pool CLES estimates"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#meta-analyzing-cles-estimates",
+    "href": "presentations/srsm2026/srsm2026.html#meta-analyzing-cles-estimates",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Meta-analyzing CLES Estimates",
+    "text": "Meta-analyzing CLES Estimates\n\nCLES:\n\n\\(\\hat{\\theta} \\in [0, 1]\\)\nSampling distribution is skewed near 0 and 1\n\nThree transformations of \\(\\hat{\\theta}_i\\):\n\nlogit, arcsine, and probit/SMD\n\nTwo back-transformations to obtain \\(\\hat{\\mu}_{\\theta}\\):\n\nStandard\nIntegral"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#back-transformation-methods-for-hatmu_theta",
+    "href": "presentations/srsm2026/srsm2026.html#back-transformation-methods-for-hatmu_theta",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Back-transformation Methods for \\(\\hat{\\mu}_{\\theta}\\)",
+    "text": "Back-transformation Methods for \\(\\hat{\\mu}_{\\theta}\\)\nTwo approaches to estimate \\(\\mu_{\\theta}\\) after pooling on the transformed scale:\n\nStandard:\n\nReturns the median of the distribution of true effects, not the mean (Jensen’s inequality)\n\nIntegral:\n\nIntegrates \\(g^{-1}\\) over the normal random-effects distribution\nRecovers the mean of the distribution of true effects\nSee Igelmann et al. (2026)"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#data-generation",
+    "href": "presentations/srsm2026/srsm2026.html#data-generation",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Data Generation",
+    "text": "Data Generation\n\nSample \\(k\\) true CLES values (\\(\\theta_i\\)) from \\(\\text{Beta}(\\alpha, \\beta)\\) with moments \\((\\mu_\\theta, \\tau^2_\\theta)\\)\nSample study sample sizes from right-skewed distribution (\\(\\gamma_1 \\approx 1.45\\)):\n\n\n\\[n_i \\sim (\\overline{n}/20) \\times \\chi_{df=4}^2 + (3\\overline{n}/10),\\]\n\nwhere \\(\\overline{n}\\) is the average sample size for a primary study and assuming equal group sizes Marín-Martínez and Sánchez-Meca (1998); Sanchez-Meca and Marin-Martinez (1998)\n\nGenerated observed CLES estimates (\\(\\hat{\\theta}_i\\)) implied by the model that\n\n\nAssumed normally distributed outcomes with equal population variances\n\\(\\sigma_X = \\sigma_Y = 1\\) and \\(\\mu_X = 0\\)\n\\(\\mu_Y\\) chosen so that \\(P(Y&gt;X)=\\theta_i\\)"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#simulation-design",
+    "href": "presentations/srsm2026/srsm2026.html#simulation-design",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Simulation Design",
+    "text": "Simulation Design\n\n\n\n\n\n\n\n\nFactor\nValues\n\n\n\n\nCLES parameter (\\(\\mu_{\\theta}\\))\n0.5, 0.555, 0.635, 0.710, 0.776, 0.833\n\n\nNumber of studies (\\(k\\))\n10, 20, 40, 80, 160\n\n\nAvg. participants per study (\\(\\bar{n}\\))\n30, 50, 80, 100\n\n\nBetween-study heterogeneity (\\(\\tau_{\\theta}\\))\n0, 0.012, 0.048, 0.094, 0.138\n\n\n\n\n\n600 conditions \\(\\times\\) 10,000 replications each\n\\(\\mu_{\\theta}\\) and \\(\\tau_{\\theta}\\) choosen to correspond to commonly observed SMD values\n7 pooling methods; REML estimation (DL when convergence failed); Knapp-Hartung test\nPerformance criteria: bias and RMSE of \\(\\hat{\\mu}_{\\theta}\\); 95% CI coverage; rejection rates and power for test of \\(H_0: \\mu_{\\theta} = 0.5\\) and Q-test of \\(H_0: \\tau^2 = 0\\); bias in \\(\\hat{\\tau}_{\\theta}\\)"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#results-parameter-bias",
+    "href": "presentations/srsm2026/srsm2026.html#results-parameter-bias",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Results: Parameter Bias",
+    "text": "Results: Parameter Bias"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#results-rmse",
+    "href": "presentations/srsm2026/srsm2026.html#results-rmse",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Results: RMSE",
+    "text": "Results: RMSE"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#results-coverage",
+    "href": "presentations/srsm2026/srsm2026.html#results-coverage",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Results: Coverage",
+    "text": "Results: Coverage"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#results-coverage-integral-methods-only",
+    "href": "presentations/srsm2026/srsm2026.html#results-coverage-integral-methods-only",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Results: Coverage – Integral Methods Only",
+    "text": "Results: Coverage – Integral Methods Only"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#conclusions-and-discussion",
+    "href": "presentations/srsm2026/srsm2026.html#conclusions-and-discussion",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Conclusions and Discussion",
+    "text": "Conclusions and Discussion\n\nStandard back-transformations are acceptable at low heterogeneity, but integral back-transformation is recommended when \\(\\tau_\\theta\\) is large\nUnder normality and homoscedasticity, SMD with integral back-transformation is the recommended\n\narcsine and logit transformations with the integral back-transformation were comparable across most conditions (except for coverage for moderate \\(\\tau_{\\theta}\\) and large \\(k\\))\nDirect pooling should be avoided \n\nNext Study:\n\nExtend to non-normal outcomes and unequal population variances and evaluate other estimates (and corresponding sampling variances) of stochastic superiority"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#thank-you-questions",
+    "href": "presentations/srsm2026/srsm2026.html#thank-you-questions",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Thank you! Questions?",
+    "text": "Thank you! Questions?"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#references",
+    "href": "presentations/srsm2026/srsm2026.html#references",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "References",
+    "text": "References\n\n\nCliff, Norman. 1993. “Dominance Statistics: Ordinal Analyses to Answer Ordinal Questions.” Psychological Bulletin 114 (3): 494–509. https://doi.org/10.1037/0033-2909.114.3.494.\n\n\nDeLong, Elizabeth R., David M. DeLong, and Daniel L. Clarke-Pearson. 1988. “Comparing the Areas Under Two or More Correlated Receiver Operating Characteristic Curves: A Nonparametric Approach.” Biometrics 44 (3): 837–45. https://doi.org/10.2307/2531595.\n\n\nHanley, J. A., and B. J. McNeil. 1982. “The Meaning and Use of the Area Under a Receiver Operating Characteristic (ROC) Curve.” Radiology 143 (1): 29–36. https://doi.org/doi: 10.1148/radiology.143.1.7063747. PMID: 7063747.\n\n\nIgelmann, Jan-Bernd, Markus Pauly, and Wolfgang Viechtbauer. 2026. “Back-Transformations in Random-Effects Meta-Analysis—Impact and Interpretation.” Research Synthesis Methods, May, 1–14. https://doi.org/10.1017/rsm.2026.10096.\n\n\nMarín-Martínez, Fulgencio, and Julio Sánchez-Meca. 1998. “Testing for Dichotomous Moderators in Meta-Analysis.” The Journal of Experimental Education 67 (1): 69–81. https://www.jstor.org/stable/20152582.\n\n\nMcGraw, Kenneth O., and S. P. Wong. 1992. “A Common Language Effect Size Statistic.” Psychological Bulletin (US) 111 (2): 361–65. https://doi.org/10.1037/0033-2909.111.2.361.\n\n\nNewson, Roger. 2002. “Parameters Behind ‘Nonparametric’ Statistics: Kendall’s Tau, Somers’ D and Median Differences.” The Stata Journal 2 (1): 45–64. https://doi.org/10.1177/1536867X0200200103.\n\n\nSanchez-Meca, Julio, and Fulgencio Marin-Martinez. 1998. “Weighting by Inverse Variance or by Sample Size in Meta-Analysis: A Simulation Study.” Educational and Psychological Measurement 58 (2): 211–19."
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#extra-slides",
+    "href": "presentations/srsm2026/srsm2026.html#extra-slides",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Extra Slides",
+    "text": "Extra Slides"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#transformations-of-cles-estimates",
+    "href": "presentations/srsm2026/srsm2026.html#transformations-of-cles-estimates",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Transformations of CLES Estimates",
+    "text": "Transformations of CLES Estimates\n\n\nDirect Transformations, Back-transformations, and Sampling Variances\n\n\n\n\n\n\n\n\nTransformation\n\\(g(\\hat{\\theta})\\)\n\\(g^{-1}(t)\\)\n\\(\\mathrm{var}(g(\\hat{\\theta}))\\)\n\n\n\n\nLogit\n\\(\\ln\\left(\\dfrac{\\hat{\\theta}}{1-\\hat{\\theta}}\\right)\\)\n\\(\\dfrac{1}{1+e^{-t}}\\)\n\\(\\dfrac{1}{\\hat{\\theta}^2(1-\\hat{\\theta})^2} \\times \\mathrm{var}(\\hat{\\theta})\\)\n\n\nArcsine\n\\(\\arcsin\\left(\\sqrt{\\hat{\\theta}}\\right)\\)\n\\(\\sin^2(t)\\)\n\\(\\dfrac{1}{4\\hat{\\theta}(1-\\hat{\\theta})} \\times \\mathrm{var}(\\hat{\\theta})\\)\n\n\nProbit\n\\(\\Phi^{-1}(\\hat{\\theta})\\)\n\\(\\Phi(t)\\)\n\\(\\dfrac{1}{\\left[\\phi(\\Phi^{-1}(\\hat{\\theta}))\\right]^2} \\times \\mathrm{var}(\\hat{\\theta})\\)\n\n\nSMD\n\\(\\Phi^{-1}(\\hat{\\theta})\\sqrt{2}\\)\n\\(\\Phi\\left(\\dfrac{t}{\\sqrt{2}}\\right)\\)\n\\(\\dfrac{1}{n_1} + \\dfrac{1}{n_2} + \\dfrac{d^2}{2(n_1+n_2)}\\)"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#back-transformation-methods",
+    "href": "presentations/srsm2026/srsm2026.html#back-transformation-methods",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Back-transformation Methods",
+    "text": "Back-transformation Methods\n\n\nIntegral Back-Transformations for Each Method\n\n\n\n\n\n\nTransformation\nIntegral\n\n\n\n\nLogit\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} \\dfrac{1}{1+e^{-t}} \\, \\phi(t \\mid \\mu, \\tau^2) \\, dt\\)\n\n\nArcsine\n\\(\\displaystyle\\int_{0}^{\\pi/2} \\sin^2(t) \\, \\dfrac{\\phi(t \\mid \\mu, \\tau^2)}{\\Phi\\left(\\frac{\\pi/2-\\mu}{\\tau}\\right) - \\Phi\\left(\\frac{-\\mu}{\\tau}\\right)} \\, dt\\)\n\n\nProbit\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} \\Phi(t) \\, \\phi(t \\mid \\mu, \\tau^2) \\, dt\\)\n\n\nSMD\n\\(\\displaystyle\\int_{-\\infty}^{\\infty} \\Phi\\left(\\dfrac{t}{\\sqrt{2}}\\right) \\phi(t \\mid \\mu, \\tau^2) \\, dt\\)"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#further-details-on-between-study-heterogeneity",
+    "href": "presentations/srsm2026/srsm2026.html#further-details-on-between-study-heterogeneity",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Further Details on Between-study Heterogeneity",
+    "text": "Further Details on Between-study Heterogeneity\n\nSpecified \\(\\mu_{\\theta}\\) and \\(\\tau_{\\theta}^2\\) values as the moments of the beta distribution\nFound the \\(\\alpha\\) and \\(\\beta\\) parameters of the beta distribution by: \\(\\alpha = \\mu_{\\theta} \\times \\nu\\) and \\(\\beta = (1 - \\mu_{\\theta})\\nu\\) where \\(\\nu = (\\alpha + \\beta) =\\frac{\\mu_{\\theta}(1 - \\mu_{\\theta})}{\\tau^2_{\\theta}} - 1\\).\n\nNote. values must meet the following condition: \\(\\nu = (\\alpha + \\beta) &gt; 0\\), so therefore \\(\\tau^2_{\\theta} &lt; \\mu_{\\theta}(1 - \\mu_{\\theta})\\)\n\nFor the specified \\(\\mu_{\\theta}\\) and \\(\\tau_{\\theta}^2\\), we derived them from SMD parameters through numerical integration\n\nspecified all 20 pairwise combinations of the following: \\(\\mu_d = \\{0, 0.2, 0.5, 0.8, 1.1, 1.4\\}\\) and \\(\\tau_d = \\{0, 0.05, 0.20, 0.40, 0.60\\}\\)"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#beta-distributions",
+    "href": "presentations/srsm2026/srsm2026.html#beta-distributions",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Beta Distributions",
+    "text": "Beta Distributions"
+  },
+  {
+    "objectID": "presentations/srsm2026/srsm2026.html#obtaining-cles-estimates",
+    "href": "presentations/srsm2026/srsm2026.html#obtaining-cles-estimates",
+    "title": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches",
+    "section": "Obtaining CLES Estimates",
+    "text": "Obtaining CLES Estimates\n\nAfter obtaining true CLES values, then transform to true SMD values:\n\n\n\\[\n  g_{\\text{d}}(\\theta_i) = \\Phi^{-1}(\\theta_i)\\sqrt{2}\n  \\]\n\n\nGenerate observed SMD estimates from a scaled non-central \\(t\\)-distribution assuming homoscedastic variances:\n\n\n\\[g_{\\text{d}}(\\hat{\\theta_i}) \\sim N\\left(g_{\\text{d}}(\\theta_i),  \\sqrt{\\frac{1}{n_1} + \\frac{1}{n_2}}\\right) \\bigg/ \\sqrt{\\frac{\\chi^2(df= n_1+n_2 -2)}{n_1 + n_2 -2}}\\]"
   }
 ]

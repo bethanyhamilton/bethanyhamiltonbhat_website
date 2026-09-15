@@ -1,0 +1,6 @@
+---
+title: "Presentations"
+---
+
+- [Annual Meeting of the Society for Research Synthesis, 2026](presentations/srsm2026/srsm2026.qmd)
+
