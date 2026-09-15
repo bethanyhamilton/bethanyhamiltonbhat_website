@@ -4,14 +4,189 @@
     "href": "presentations.html",
     "title": "Presentations",
     "section": "",
-    "text": "Annual Meeting of the Society for Research Synthesis, 2026"
+    "text": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches, Annual Meeting of the Society for Research Synthesis, Chania, Crete, Greece, 2026\nMeta-Analytic Pooling of Intraclass Correlation Coefficient Estimates, International Conference on Multilevel Analysis, Utrecht, The Netherlands, 2026"
   },
   {
-    "objectID": "lilguy.html",
-    "href": "lilguy.html",
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#meta-analytic-pooling-of-intraclass-correlation-coefficient-estimates",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#meta-analytic-pooling-of-intraclass-correlation-coefficient-estimates",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "text": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates\nBhat, B. H., & Beretvas, S. N. (2026). Meta-analytic pooling of intraclass correlation coefficient estimates. Research Synthesis Methods, 1–34. doi:10.1017/rsm.2026.10077\n\n\n\n\n\n\n\n\n\n\nToday I’ll talk about my recently published work on meta-analytic pooling of intraclass correlation coefficient estimates, or ICCs."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#overview",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#overview",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Overview",
+    "text": "Overview\n\nMotivation\nReview of Concepts\nResearch Questions\nStudy Design\nResults\nConclusions\n\n\nI’ll start with the motivation and background for this work and briefly review key concepts related to ICCs and meta-analysis.\nThen I’ll describe the research questions and study design, followed by results and conclusions."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#background",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#background",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Background",
+    "text": "Background\n\nICCs required for secondary analyses:\n\nProspective power analyses for clustered designs\nCorrecting effect sizes in meta-analysis for clustering (Hedges and Hedberg 2007) or psychometric artifacts (Wiernik and Dahlke 2020)\n\nICCs have been used as an outcome in meta-analysis to summarize reliability or clustering effects across studies\n\n\nThere are two contexts that my study is relevant.\nFirst, ICC estimates are needed for secondary analyses, such as power calculations for clustered designs.\nFor these secondary analyses, researchers often need to assume some value for the ICC usually imputing an estimate from a prior study with a similar design and population.\nThe second context, ICCs have been used as the focal outcome of meta-analysis themselves, for example, I came across a study where they meta-analyzed ICC estimates to obtain an effect of group therapy."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#icc-estimate",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#icc-estimate",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "ICC estimate",
+    "text": "ICC estimate\nOne-way random effects model:\n\\[ \\begin{split}\n    Level \\ 1: Y_{ij} = \\beta_{0j} + e_{ij} \\\\\n    Level \\ 2: \\beta_{0j} = \\gamma_{00} + u_{0j}\n    \\end{split}\n    \\] where \\(e_{ij} \\sim N(0, \\sigma_e^2)\\) and \\(u_{0j} \\sim N(0, \\sigma^2_u)\\)\nICC (McGraw and Wong 1996; Fisher 1925):\n\\[  \\rho=\\frac{\\sigma^2_u}{\\sigma^2_u+\\sigma^2_e}\\]\n\nFor this study, we focused on an ICC from a one-way two-level mixed effects model normally distributed outcomes.\nThe ICC is the proportion of total variance that is due to between-cluster variability.\nHigher ICC values imply that there is a stronger clustering effect, and an ICC value of zero implies that there is no clustering dependence."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#sensitivity-of-power-analysis-to-icc-choice",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#sensitivity-of-power-analysis-to-icc-choice",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Sensitivity of Power Analysis to ICC Choice",
+    "text": "Sensitivity of Power Analysis to ICC Choice\nExample: \\(\\hat{\\rho} \\in \\{0.05, 0.12, 0.18, 0.25\\}\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote. Assumptions: \\(n = 20\\); \\(1 - \\beta = 0.80\\); \\(\\alpha = 0.05\\); \\(d = 0.3\\); power calculation based on design effect approximation (i.e., DEFF=\\(1 +(n-1) \\times \\rho\\), where \\(n\\) is the average cluster size)\n\n\nTo motivate why we need a principled way to combine ICC estimates, consider a simple hypothetic example.\nSuppose I want to conduct a cluster-randomized trial evaluating the effectiveness of the Marte Meo method on children’s communications skills in German daycares. I plan to use a cluster randomized trial and assume approximately 20 children per daycare and a cohen’s d of \\(0.3\\).\nTo determine the required number of day cares I need to recruit for my study, I need an assumption about the ICC. So, I identify four prior studies that have similar study characteristics and outcome that report these plausible ICC values: \\(\\hat{\\rho}_1 = 0.05\\), \\(\\hat{\\rho}_2 = 0.12\\), \\(\\hat{\\rho}_3 = 0.18\\), and \\(\\hat{\\rho}_4 = 0.25\\).\nAlthough some of these values are relatively close in magnitude, they result in very different required number of clusters and sample sizes.\nIf I choose a value that is too large, I risk overestimating the ICC and wasting resources by planning an unnecessarily large study. And if I choose a value that is too small, I risk underpowering the study.\nOne option would be to take a simple average of these ICCs. However, this ignores the fact that these estimates come from studies with different sample sizes and therefore different levels of precision.\nThis motivates treating these ICCs as estimates of a common underlying parameter and combining them using a meta-analytic pooling, where estimates are weighted by their precision.\nThis provides a principled way to obtain a single representative ICC value for use in design planning."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#why-meta-analysis",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#why-meta-analysis",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Why Meta-Analysis?",
+    "text": "Why Meta-Analysis?\nMeta-analysis:\n\nCombines ICC estimates using weighted pooling\nGives more weight to more precise studies\n\nRandom-Effects Pooling:\n\\[\\hat{\\mu} = \\frac{\\sum_{i=1}^k w_i T_i}{\\sum_{i=1}^k w_i},\\] where \\(k\\) denotes the number of studies, \\(w_i = \\frac{1}{\\hat{v}_i+\\hat{\\tau}^2}\\), \\(T_i\\) is the study-specific effect size estimate.\n\nNote. Corresponds to random-effects meta-analytic model with variability from: between-study heterogeneity and within-study sampling error\n\n\nMeta-analysis provides a principled framework for combining estimates across studies by using inverse-variance weighting so that more precise studies contribute more information.\nSimilar to many effect sizes commonly used in meta-analysis, such as correlations or standardized mean differences, ICCs are standardized. This makes them suitable for pooling across studies in the same way.\nHowever, there is an important difference.\nUnlike these more established effect sizes, the sampling distribution of the ICC is not known. And despite many approximations to the sampling variance for the ICC being proposed, it is unclear which specification performs best when used as inverse-variance weights in a meta-analysis."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#sampling-variances-of-icc-estimates",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#sampling-variances-of-icc-estimates",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Sampling Variances of ICC Estimates",
+    "text": "Sampling Variances of ICC Estimates\n\n\nSampling Variance Formulas\n\n\n\n\n\n\n\nFormula\nEquation\nNotes\n\n\n\n\nFisher (1925)\n\\(v_{\\hat{\\rho}}=\\frac{2(1-\\rho)^2[1+(n-1)\\rho]^2}{n(n-1)(j-1)}\\)\nRequires average cluster size and number of clusters\n\n\nSwiger et al. (1964)\n\\(v_{\\hat{\\rho}}=\\frac{2(N-1)(1-\\rho^2)[1+(n_0-1)\\rho]^2}{n_0^2(N-j)(j-1)}\\)\nScaled by total \\(N\\)\n\n\nHedges et al. (2012)\n\\(v_{\\hat{\\rho}}=\\frac{(1-\\rho)^2v_2}{(\\sigma_e^2+\\sigma^2_u)^2}\\)\nRequires reported variance components and the variance of the level-2 variance\n\n\nDonner and Koval (1980)\n\\(v_{\\hat{\\rho}}=\\frac{2N(1-\\rho)^2}{N\\sum_{i=1}^{j}n_i(n_i-1)\\hat{V_i}\\hat{W_i}^{-2}-\\rho^2\\Big[\\sum_{i=1}^{j}n_i(n_i-1)\\hat{W_i}^{-1}\\Big]^2}\\)\nRequires how many level-1 units there are in each cluster, but reduces to Fisher when balanced\n\n\nSmith (1957)\n\\(v_{\\hat{\\rho}}=\\frac{2(1-\\rho)^2}{n_0^2}\\Big(\\frac{[1+\\rho(n_0-1)]^2}{N-j}+\\frac{(j-1)(1-\\rho)[1+\\rho(2n_0-1)]+\\rho^2[\\sum n_i^2-2N^{-1}\\sum n_i^3+N^{-2}(\\sum n_i^2)^2]}{(j-1)^2}\\Big)\\)\nRequires how many level-1 units there are in each cluster\n\n\nFisher TF\n\\(v_{\\hat{\\rho}}=0.5\\{(j-1)^{-1}+(N-j)^{-1}\\}\\)\nNormalizing transformation; fewest inputs\n\n\n\n\nNote. \\(n_0 = \\frac{1}{j-1}\\left[N-\\sum_{i=1}^j\\frac{n_i^2}{N}\\right]\\) is the weighted mean cluster size; \\(\\hat{W_i} = 1 + (n_i-1)\\rho\\); \\(\\hat{V_i} = 1 + (n_i-1)\\rho^2\\); \\(v_2\\) is the variance of the level-2 variance \\(\\sigma^2_u\\); ICC estimates are normally transformed using: \\(Z_F = \\frac{1}{2}\\text{ln}\\frac{1+(n_0-1)\\hat{\\rho}}{1- \\hat{\\rho}}\\).\n\n\n\nThese estimators differ in terms of their assumptions and the information they require from primary studies.\nSome require only the the total sample size and number of clusters, while others require more detailed information, such as full cluster size distributions or variance components.\nIn this study, we evaluate six commonly used variance estimators to understand how they affect meta-analytic pooling of ICCs."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#meta-analytic-estimation-methods",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#meta-analytic-estimation-methods",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Meta-Analytic Estimation Methods",
+    "text": "Meta-Analytic Estimation Methods\nAssuming a random effects working model with independent ICC estimates, we evaluated:\n\nRobust Variance Estimation (RVE) (Hedges et al. 2010) (Sandwich / Huber–White-type estimator)\n\nUses a method-of-moments estimate for \\(\\tau^2\\)\nRobust to weight specification\nAgnostic to distributional assumptions\n\nRestricted Maximum Likelihood (REML) (Viechtbauer et al. 2015)\n\nStandard likelihood-based \\(\\tau^2\\) estimator\nWidely used in meta-analysis\n\n\n\nNote. Differences are expected primarily in estimated standard error, not in the pooled ICC.\n\n\nIn addition to the choice of sampling variance, we also consider how the meta-analysis itself is estimated.\nWe assume a random-effects model, where ICCs may vary across studies.\nWe compare two approaches.\nThe first is robust variance estimation, or RVE. You can think of this as a sandwich or Huber–White-type estimator, which provides standard errors that are robust to certain types of misspecification, including incorrect variance weights.\nThe second is restricted maximum likelihood, or REML, which is the standard likelihood-based approach commonly used in meta-analysis.\nImportantly, both methods tend to produce very similar pooled ICC estimates.\nThe main differences arise in how they estimate uncertainty—specifically, the standard errors of the pooled ICC."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#research-question",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#research-question",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Research Question",
+    "text": "Research Question\nHow well does pooling of ICC estimates recover the population ICC value:\n\n\nunder a random-effects meta-analytic model,\nusing RVE versus REML, and\nacross different sampling variance estimators in the inverse variance weights?"
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#study-design",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#study-design",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Study Design",
+    "text": "Study Design\n\nPrimary study data were generated and an ICC was estimated for each study (\\(k\\)); meta-analytic datasets contained \\(k = 20, 50,\\) or \\(100\\) studies.\n\n\nPrimary study data generation and ICC estimation\n\n\n\n\n\n\nComponent\nValues\n\n\n\n\nNumber of clusters (\\(j\\))\n\\(\\mathcal{U}\\)[30, 50], \\(\\mathcal{U}\\)[50, 100]\n\n\nAverage units per cluster (\\(\\overline{n}_j\\))\n\\(\\mathcal{U}\\)[10, 30], \\(\\mathcal{U}\\)[30, 50]\n\n\nDegree of imbalance in cluster sizes (\\(\\zeta\\))\n0.1, 0.5  Note. \\(n_j \\sim \\mathcal{U}[\\bar{n}_j(1-\\zeta),\\, \\bar{n}_j(1+\\zeta)]\\)\n\n\nTrue ICC (\\(\\rho\\))\n0.05; 0.10; 0.15; 0.25; 0.50; 0.90\n\n\nBetween-study heterogeneity (\\(\\tau_{\\rho}\\))\n0.01, 0.02  Note. \\(\\tilde{\\rho} = \\rho + \\mathcal{U}(-2\\tau_\\rho, 2\\tau_\\rho)\\)\n\n\nICC estimation at primary study level\nUnconditional two-level model with REML\n\n\n\n\n\n\n\nBias (PB, RPB)\nRMSE\nSE bias (RSEB)\n\n\n\nIn the simulation design, we consider two stages: a primary-study data generation and estimation stage, followed by a meta-analytic synthesis stage.\nIn the simulation design, we consider a two-stage framework consisting of a primary-study data generation and estimation stage, followed by a meta-analytic synthesis stage.\nIn the primary-study stage, we generate clustered data under a range of conditions that vary the number of clusters, the average cluster size, the degree of cluster-size imbalance, and the true ICC value. Cluster sizes are generated with controlled heterogeneity around the mean cluster size, where the degree of imbalance parameter governs the width of the uniform distribution from which cluster sizes are drawn. This produces bounded variation in cluster sizes across clusters within each study.\nFor each primary study, we first define a true ICC based on specified level-1 and level-2 variance components. We then introduce study-level variation in the ICC using a symmetric uniform distribution controlled by a heterogeneity parameter, τ. This yields a study-specific ICC value, which is then mapped back into valid variance components while holding the level-1 variance fixed. This ensures that each dataset remains a valid two-level random-intercept model.\nThis produces study-level ICC estimates, which are then used as observed effect sizes in the meta-analysis.\nFor the ICC values in particular, we selected a range that reflects different applied contexts.\nLower values, such as 0.05 to 0.25, are commonly observed in clustered data settings like education or health studies.\nHigher values, such as 0.50 or 0.90, are more typical in reliability contexts, where measurements within a unit are expected to be highly similar.\nThis range allows us to evaluate performance across both clustering and reliability applications.\nIn the meta-analytic stage, we synthesize ICC estimates across studies, varying the number of studies in each meta-analytic dataset. We compare inverse-variance weighting approaches using different sampling variance formulas, as well as two estimation methods: REML and robust variance estimation.\nPerformance is evaluated using bias, relative bias, RMSE, and relative standard error bias for the pooled ICC, as well as bias for the variance components at the primary study level."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#results---pb-for-pooled-icc",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#results---pb-for-pooled-icc",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Results - PB for pooled ICC",
+    "text": "Results - PB for pooled ICC\n\n\n\n\n\n\n\n\n\n\nHere we’re looking at raw bias in the pooled ICC estimates.\nOverall, bias is very small across all methods and conditions. The main thing to notice is that the Fisher transformation formula shows slightly more negative bias when the true ICC is moderate, around 0.5.\nBut importantly, even in those cases, the magnitude of the bias is very small ( at most negative 0.02) so in practice, these differences are negligible."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#results---rpb-for-pooled-icc",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#results---rpb-for-pooled-icc",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Results - RPB for Pooled ICC",
+    "text": "Results - RPB for Pooled ICC\n\n\n\n\n\n\n\n\n\n\nWhen we look at relative bias, a slightly different pattern emerges.\nHere, the Fisher transformation actually performs the best overall, especially when the true ICC is small.\nAcross most conditions, we see essentially no substantial relative bias for any method, but Fisher TF is the most consistently well-behaved across the full range of ICC values."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#results---relative-standard-error-bias-tau_rho",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#results---relative-standard-error-bias-tau_rho",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Results - Relative standard error bias (\\(\\tau_{\\rho}\\))",
+    "text": "Results - Relative standard error bias (\\(\\tau_{\\rho}\\))\n\n\n\n\n\n\n\n\n\n\nThis slide focuses on bias in the estimated standard errors of the pooled ICC.\nThe main takeaway is that the Fisher transformation again performs the most consistently across conditions.\nWe do see some instability for RVE, particularly when the ICC is very small or very large and when between-study heterogeneity is higher.\nBut overall, Fisher TF gives the most stable standard error estimates."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#conclusions",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#conclusions",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Conclusions",
+    "text": "Conclusions\nMeta-analysis provides a reliable way to obtain a single representative ICC estimate.\n\nREML and RVE performed equivalently for pooling ICCs\nNumber of studies (\\(k\\)) had little impact on pooled ICC accuracy\nFisher’s transformation variance formula is recommended:\n\nLowest bias for small ICCs\nComparable performance for moderate and large ICCs\nMost stable standard error estimates\nRequires minimal information from primary studies (unlike other sampling variance formulas)\n\n\n\nTo conclude, we find that REML and RVE perform very similarly when pooling ICC estimates.\nThe number of studies included in the meta-analysis had little impact on the accuracy of the pooled ICC.\nAcross the variance estimators we evaluated, the Fisher transformation approach performed best overall.\nIt showed the lowest bias for smaller ICC values and performed comparably for moderate and larger ICCs.\nIt also provided the most stable standard error estimates across conditions.\nImportantly, it requires relatively minimal information from primary studies, which makes it especially practical in applied settings where reporting is often incomplete.\nMore broadly, our results suggest that meta-analysis is a reliable and principled way to obtain a single representative ICC estimate when multiple estimates are available.\nSo in practice, when multiple ICC estimates are available, meta-analysis provides a principled and reliable way to choose a single value.\n\nFor moderate ICCs (\\(\\rho = .50\\)), slightly underestimated ICCs when cluster sizes were small, but bias was very small (\\(\\leq -0.018\\))."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#future-directions",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#future-directions",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Future Directions",
+    "text": "Future Directions\n\nExtend to non-normal outcomes (binary, count data)\nEvaluate reliability ICCs with fewer level-1 units\nExtend to three-level and more complex hierarchical structures\nConsider settings with multiple dependent ICCs per study\n\n\nBecause this study focused on continuous, normally distributed outcomes in a two-level random-intercept setting, future work should extend these results to more complex and applied data structures.\nIn particular, many ICCs in practice arise from binary or count outcomes, where the distributional assumptions underlying both ICC estimation and variance approximations may behave differently.\nAdditionally, we only considered single ICC estimates per study, whereas in practice studies often report multiple ICCs derived from related outcomes or models, introducing dependence that is not captured here.\nAnother important direction is reliability-focused ICCs based on smaller numbers of level-1 units, which may behave differently in terms of estimation error and variance stability.\nFinally, extending to three-level or more complex hierarchical structures would help generalize these findings to broader applied settings."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#thank-you-questions",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#thank-you-questions",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Thank you! Questions?",
+    "text": "Thank you! Questions?"
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#references",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#references",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "References",
+    "text": "References\n\n\nDonner, Allan, and John J. Koval. 1980. “The Estimation of Intraclass Correlation in the Analysis of Family Data.” Biometrics. Journal of the International Biometric Society 36 (1): 19–25. https://doi.org/10.2307/2530491.\n\n\nFisher, R. A. 1925. “Theory of Statistical Estimation.” Mathematical Proceedings of the Cambridge Philosophical Society 22 (5): 700–725. https://doi.org/10.1017/S0305004100009580.\n\n\nHedges, Larry V., and E. C. Hedberg. 2007. “Intraclass Correlation Values for Planning Group-Randomized Trials in Education.” Educational Evaluation and Policy Analysis 29 (1): 60–87. https://doi.org/10.3102/0162373707299706.\n\n\nHedges, Larry V., E. C. Hedberg, and Arend M. Kuyper. 2012. “The Variance of Intraclass Correlations in Three- and Four-Level Models.” Educational and Psychological Measurement 72 (6): 893–909. https://doi.org/10.1177/0013164412445193.\n\n\nHedges, Larry V., Elizabeth Tipton, and Matthew C. Johnson. 2010. “Robust Variance Estimation in Meta-Regression with Dependent Effect Size Estimates.” Research Synthesis Methods 1 (1): 39–65. https://doi.org/10.1002/jrsm.5.\n\n\nMcGraw, Kenneth O., and S. P. Wong. 1996. “Forming Inferences about Some Intraclass Correlation Coefficients.” Psychological Methods 1 (1): 30–46. https://doi.org/10.1037/1082-989X.1.1.30.\n\n\nSmith, C. a. B. 1957. “On the Estimation of Intraclass Correlation.” Annals of Human Genetics 21 (4): 363–73. https://doi.org/10.1111/j.1469-1809.1972.tb00291.x.\n\n\nSwiger, L. A., W. R. Harvey, D. O. Everson, and K. E. Gregory. 1964. “The Variance of Intraclass Correlation Involving Groups with One Observation.” Biometrics. Journal of the International Biometric Society 20 (4): 818. https://doi.org/10.2307/2528131.\n\n\nViechtbauer, Wolfgang, José Antonio López-López, Julio Sánchez-Meca, and Fulgencio Marín-Martínez. 2015. “A Comparison of Procedures to Test for Moderators in Mixed-Effects Meta-Regression Models.” Psychological Methods, Meta-Analysis Topics, vol. 20 (3): 360–74. https://doi.org/10.1037/met0000023.\n\n\nWiernik, Brenton M., and Jeffrey A. Dahlke. 2020. “Obtaining Unbiased Results in Meta-Analysis: The Importance of Correcting for Statistical Artifacts.” Advances in Methods and Practices in Psychological Science 3 (1): 94–123. https://doi.org/10.1177/2515245919885611."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#extra-slides",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#extra-slides",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Extra Slides",
+    "text": "Extra Slides"
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#results---rmse-for-pooled-icc",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#results---rmse-for-pooled-icc",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Results - RMSE for Pooled ICC",
+    "text": "Results - RMSE for Pooled ICC\n\n\n\n\n\n\n\n\n\n\nRMSE combines both bias and variability, so it reflects overall accuracy.\nHere, Fisher TF performs best when the true ICC is small, where it has the lowest RMSE.\nAt moderate ICC values, around 0.5, it performs slightly worse than the other formulas, and this is driven by the small negative bias we saw earlier.\nSo this pattern is consistent with the bias results."
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#results---relative-standard-error-bias-overlinen_j",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#results---relative-standard-error-bias-overlinen_j",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "Results - Relative Standard Error Bias (\\(\\overline{n}_j\\))",
+    "text": "Results - Relative Standard Error Bias (\\(\\overline{n}_j\\))"
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#rpb-k",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#rpb-k",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "RPB \\(k\\)",
+    "text": "RPB \\(k\\)"
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#pb-k",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#pb-k",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "PB \\(k\\)",
+    "text": "PB \\(k\\)"
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#l2-variance-by-tau_rho",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#l2-variance-by-tau_rho",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "L2 Variance by \\(\\tau_{\\rho}\\)",
+    "text": "L2 Variance by \\(\\tau_{\\rho}\\)"
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#l2-variance-by-number-of-clusters",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#l2-variance-by-number-of-clusters",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "L2 Variance by Number of Clusters",
+    "text": "L2 Variance by Number of Clusters"
+  },
+  {
+    "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#l1-variance-by-clustersize",
+    "href": "presentations/multilevel2026/multilevelconf_ICC.html#l1-variance-by-clustersize",
+    "title": "Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates",
+    "section": "L1 Variance by Clustersize",
+    "text": "L1 Variance by Clustersize"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Bethany Hamilton Bhat",
     "section": "",
-    "text": "Just had to click on the little guy, huh?"
+    "text": "Open PDF in a new window"
   },
   {
     "objectID": "about.html",
@@ -21,11 +196,11 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "lilguy.html",
+    "href": "lilguy.html",
     "title": "Bethany Hamilton Bhat",
     "section": "",
-    "text": "Open PDF in a new window"
+    "text": "Just had to click on the little guy, huh?"
   },
   {
     "objectID": "presentations/srsm2026/srsm2026.html#motivation",
