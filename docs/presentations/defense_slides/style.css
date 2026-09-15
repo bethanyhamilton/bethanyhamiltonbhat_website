@@ -1,0 +1,44 @@
+a:link { 
+  color: #BF5700; /* Default link color */ 
+} 
+
+a:active{
+
+  color:red;
+}
+
+.reveal h2 {
+  font-weight: normal; /* Removes bolding from level 2 headings used for slide titles */
+}
+
+a:visited { 
+  color: #BF5700; /* Color of visited links */ 
+} 
+
+a:hover { 
+  color: #BF5700; /* Color when hovered */ 
+} 
+
+/* file: style.css */
+.v-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.reveal .slide-logo {
+   max-height: 3em !important;
+}
+
+.sectionhead {
+  font-size: 0.5em;
+  text-align: center;
+  color: $presentation-heading-color;
+  font-family: $presentation-heading-font;
+  background-color: $body-bg;
+  margin: 1px;
+  padding: 2px 2px 2px 2px;
+  width: 120px;
+  border-left: 10px solid;
+}

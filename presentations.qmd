@@ -4,4 +4,5 @@ title: "Presentations"
 
 - [Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches, Annual Meeting of the Society for Research Synthesis, Chania, Crete, Greece, 2026](presentations/srsm2026/srsm2026.qmd)
 - [Meta-Analytic Pooling of Intraclass Correlation Coefficient Estimates, International Conference on Multilevel Analysis, Utrecht, The Netherlands, 2026](presentations/multilevel2026/multilevelconf_ICC.qmd)
+- [Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes, Dissertation Defense, The University of Texas at Austin, Austin, TX, 2025](presentations/defense_slides/DefenseSlides.qmd)
 

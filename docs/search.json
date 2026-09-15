@@ -4,7 +4,7 @@
     "href": "presentations.html",
     "title": "Presentations",
     "section": "",
-    "text": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches, Annual Meeting of the Society for Research Synthesis, Chania, Crete, Greece, 2026\nMeta-Analytic Pooling of Intraclass Correlation Coefficient Estimates, International Conference on Multilevel Analysis, Utrecht, The Netherlands, 2026"
+    "text": "Meta-Analytic Pooling of CLES Estimates: A Comparison of Transformation Approaches, Annual Meeting of the Society for Research Synthesis, Chania, Crete, Greece, 2026\nMeta-Analytic Pooling of Intraclass Correlation Coefficient Estimates, International Conference on Multilevel Analysis, Utrecht, The Netherlands, 2026\nPower Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes, Dissertation Defense, The University of Texas at Austin, Austin, TX, 2025"
   },
   {
     "objectID": "presentations/multilevel2026/multilevelconf_ICC.html#meta-analytic-pooling-of-intraclass-correlation-coefficient-estimates",
@@ -182,11 +182,11 @@
     "text": "L1 Variance by Clustersize"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "lilguy.html",
+    "href": "lilguy.html",
     "title": "Bethany Hamilton Bhat",
     "section": "",
-    "text": "Open PDF in a new window"
+    "text": "Just had to click on the little guy, huh?"
   },
   {
     "objectID": "about.html",
@@ -196,11 +196,228 @@
     "text": "Coming soon!"
   },
   {
-    "objectID": "lilguy.html",
-    "href": "lilguy.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Bethany Hamilton Bhat",
     "section": "",
-    "text": "Just had to click on the little guy, huh?"
+    "text": "Open PDF in a new window"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#overview",
+    "href": "presentations/defense_slides/DefenseSlides.html#overview",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Overview",
+    "text": "Overview\n\n Motivating Context for Study \n Review of Power Concepts \n Research Questions \n Methodology \n Results \n Conclusions \n\n\n\nI will begin with the motivation of the study, briefly review some concepts related to power, then move on to my methodology, results, and finally, my conclusions."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#motivating-context-for-study",
+    "href": "presentations/defense_slides/DefenseSlides.html#motivating-context-for-study",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Motivating Context for Study",
+    "text": "Motivating Context for Study\n\n\n\nDependent effect size estimates in primary studies are prevalent in meta-analyses and models that account for more than one source of dependence are widely used (Pustejovsky and Tipton 2022).\nInadequate power for a test of moderators can lead to erroneous conclusions.\nUsing univariate power analysis methods for a meta-analysis involving dependent effect sizes results in inaccurate power estimates (Vembye et al. 2023)\nPower analysis is available for the test of overall pooled effect size for models that account for dependence (Vembye et al. 2023), but not for the tests of moderators.\n\n\n\nWhile there are univariate power analysis methods for the tests of the overall pooled effect and the tests of moderators, in the context of depend effect sizes which as we know are common in social sciences and educational research, there is only power analysis methods for the test of the overall pooled effect which was proposed by Vembye et al. Extending the work of that study, in this dissertation, I proposed and validated a power approximation formula for the test of equality for study-level categorical moderators when modeling dependent effect sizes."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#power-approximation-for-test-of-multiple-categories",
+    "href": "presentations/defense_slides/DefenseSlides.html#power-approximation-for-test-of-multiple-categories",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Power Approximation For Test of Multiple Categories",
+    "text": "Power Approximation For Test of Multiple Categories\n\nFor the power of cluster-robust Wald test of the equality of multiple categories:\n\\[\n    P_{F_{\\beta}}(\\alpha, \\lambda, q) = 1 - F_{F} (c_{\\alpha, \\nu_n, \\nu_d} | \\nu_n, \\nu_d, \\lambda) \\]\n\n\\(F_{F}(x|\\nu_n, \\nu_d, \\lambda)\\) is the non-central \\(F\\) distribution function\n\\(c_{\\alpha,q}\\) is the critical value for the central \\(F\\) distribution with \\(\\nu_n = C - 1\\) and \\(\\nu_d = \\eta_z - (C-1) +1\\) degrees of freedom\n\\(\\lambda\\) is the non-centrality parameter: \\(\\lambda = \\sum_{c=1}^C W_{c}(\\mu_{c} - \\overline{\\mu})^2\\), where \\(\\overline{\\mu}\\) is the weighted grand mean of all the categories.\n\n\n\nI included this slide to highlight that the degrees of freedom used to find power involves the closed form approximation to the HTZ degrees of freedom that are evaluating and that the non-centrality parameter involves the sum of the study-level weights for each category and the overall pooled effect per category. If you woudld like to see the formula for either please me let me know at the end of the talk.\nThe non-centrality parameter, NCP or \\(\\lambda\\), is a key parameter in statistical power analysis, and a larger true value for the non-centrality parameter increases statistical power. Since degrees of freedom remain the same under the null and alternative hypotheses, the NCP defines how different the distribution of the alternative hypothesis is from the distribution of the null hypothesis."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#research-questions",
+    "href": "presentations/defense_slides/DefenseSlides.html#research-questions",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Research Questions",
+    "text": "Research Questions\n\nUsing Monte Carlo Simulation, I aimed to:\n\n\nvalidate a closed-form approximation of the power for the HTZ test of a categorical study-level moderator based on CHE+RVE.\nevaluate sampling methods for the sampling variances per study (\\(\\sigma^2_j\\)) and the number of effect sizes per study (\\(k_j\\)) with the power approximation.\nevaluate the empirical Type I error rates of the tests of a categorical study-level moderator for the CHE+RVE."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#study-design",
+    "href": "presentations/defense_slides/DefenseSlides.html#study-design",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Study Design",
+    "text": "Study Design\n\nIn this study, I obtained to types of power estimates.\n\n\n\nSimulated (true) power\n\nGenerated through Monte Carlo simulation\n\nDesign matrix, \\(\\mathbf{X}\\) and vector of meta-regression coefficients, \\(\\mu_c\\)\nSampled \\(k_j\\) and \\(\\sigma_j^2\\) from empirical distribution\nStandardized Mean Differences Estimates From CHE Model\n\nEstimate cluster-robust Wald test of multiple categories using CHE model on simulated dataset and retained p-value: \\(r_{\\alpha} = \\frac{1}{R} \\sum_{r = 1}^R I(p_r \\lt \\alpha)\\), where \\(\\rho_{\\alpha} = Pr(p_r \\lt \\alpha)\\).\n\n\n\n\n\nPower Estimates from the Approximation Formula\n\nEvaluated three methods for assuming the \\(k_j\\) and \\(\\sigma_j^2\\) in the approximations:\n\nEmpirical Distribution\nStylized Distribution\n\n\\(k_j \\sim 1 + Poisson(4.56)\\) and \\(\\sigma_j^2 \\sim Gamma(1.48, 21.97)\\)\n\nBalanced"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#generating-design-matrix-mathbfx-and-meta-regression-coefficients-mu_c-for-simulated-data",
+    "href": "presentations/defense_slides/DefenseSlides.html#generating-design-matrix-mathbfx-and-meta-regression-coefficients-mu_c-for-simulated-data",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Generating Design Matrix, \\(\\mathbf{X}\\), and Meta-regression Coefficients, \\(\\mu_c\\) for Simulated Data",
+    "text": "Generating Design Matrix, \\(\\mathbf{X}\\), and Meta-regression Coefficients, \\(\\mu_c\\) for Simulated Data\n\n\nTo generate \\(\\mathbf{X}\\):\n\nuse the factors \\(C\\), \\(J_c\\), and the balance of the number of studies per category across the moderator\n\n\n\n\n\nTo generate \\(\\mu_c\\):\n\nGiven a specified power neighborhood factor in combination with the other specified simulation design factors\n\ngenerated the \\(\\tilde{w}_{jc}\\), the degrees of freedom, the non-centrality parameter of the non-central F-distribution, and the scaling factor to obtain the \\(\\mu_c\\).\n\n\n\n\n\n\nx is clear – mu_c is hard\nif we had use a fixed set that would interact with other design and lead to a restricted power levels. so instead we set we set power neighborhoods – look at conditions that would yield more or less a centerain power level. how ? fix power neighborhood. given . evaluate the approximation across a spectrum of power levels.\nuse the arithmetic mean the \\(k_j\\) and mean \\(\\sigma^2_j\\) of \nusing \\(\\overline{k}_j\\), \\(\\overline{\\sigma}^2_j\\), \\(\\tau^2\\), \\(\\omega^2\\), and \\(\\rho\\), generate the study-level weights, \\(\\tilde{w}_{jc}\\)\nusing \\(\\tilde{w}_{jc}\\) and \\(C\\), find the degrees of freedom\nusing the HTZ formula we derived, \\(\\eta_z\\)\ngiven \\(f_c\\), \\(\\tilde{w}_{jc}\\), and \\(\\lambda\\) , find \\(\\zeta\\)\nUsing \\(\\zeta\\), \\(f_c\\), and \\(C\\), create a vector of coefficients (or \\(\\mu_c\\))."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#correlated-hierarchical-standardized-mean-differences-estimates",
+    "href": "presentations/defense_slides/DefenseSlides.html#correlated-hierarchical-standardized-mean-differences-estimates",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Correlated-Hierarchical Standardized Mean Differences Estimates",
+    "text": "Correlated-Hierarchical Standardized Mean Differences Estimates\n\nThe \\(\\boldsymbol{\\delta}_j\\) had a correlated-and-hierarchical effects structure [CHE; Pustejovsky and Tipton (2022)] and followed the procedures of Pustejovsky and Tipton (2022) and Vembye et al. (2023).\nSampled \\(k_j\\) and \\(\\sigma_j^2\\) from Williams et al. (2022).\n\nAssumed \\(N = \\frac{4}{\\sigma_j^2}\\).\n\nAssumed effect sizes in each study and across studies are equi-correlated\n\n\n\nFinally, I generated Hedges’ g effect size estimates and the corresponding sampling variance."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#estimation",
+    "href": "presentations/defense_slides/DefenseSlides.html#estimation",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Estimation",
+    "text": "Estimation\n\nFor each simulated meta-analytic dataset, I used the CHE+RVE model where I captured the p-value of the Wald’s test of equality of the categories.\nFor the value of the assumed \\(\\rho\\), I applied the same sampling correlation value that is used to generate the meta-analytic data."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#simulation-parameters",
+    "href": "presentations/defense_slides/DefenseSlides.html#simulation-parameters",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Simulation Parameters",
+    "text": "Simulation Parameters\n\n\n\n\n    \n\n    \n\n    \n    \n    \n      \n        \n        \n              \n                Parameter\n                Value\n              \n        \n        \n        \n                \n                  Pattern Type ($f_c$)\n                  2a, 3a, 3b, 3c, 4a, 4b, 4c, 4d\n                \n                \n                  Number of Studies ($J$)\n                  24, 36, 48, 60, 72\n                \n                \n                  Between-study heterogeneity ($\\tau$)\n                  0.05, 0.20, 0.40\n                \n                \n                  Within-study heterogeneity ($\\omega$)\n                  0.05, 0.20\n                \n                \n                  Sampling correlation ($\\rho$)\n                  .2, .5, .8\n                \n                \n                  Power Neighborhood (P)\n                  5%, 20%, 40%, 60%, 80%, 90%\n                \n                \n                  Balance of the $j_c$\n                  balanced $j_c$ vs. imbalanced $j_c$\n                \n        \n      \n    \n\n\n\n 8,640 conditions"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---validating-approximation---rq1",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---validating-approximation---rq1",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - Validating Approximation - RQ1",
+    "text": "Results - Validating Approximation - RQ1"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---validating-approximation---rq1-1",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---validating-approximation---rq1-1",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - Validating Approximation - RQ1",
+    "text": "Results - Validating Approximation - RQ1\n\n\n\nOverestimated power by as much as 20.81 percentage points."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---df-diagnostic---rq1",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---df-diagnostic---rq1",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - DF Diagnostic - RQ1",
+    "text": "Results - DF Diagnostic - RQ1\n\n\n\nIn some conditions, degrees of freedom \\(\\lt 11.64\\) resulted in discrepancies of more than five percentage points."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---empirical-vs-stylized-sampling-method---rq2",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---empirical-vs-stylized-sampling-method---rq2",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - Empirical vs Stylized Sampling Method - RQ2",
+    "text": "Results - Empirical vs Stylized Sampling Method - RQ2\n\n\n\nStylized overestimated power by as much as 25.72 percentage points.\nAlso, there were some conditions with smaller number of contrasts that stylized sampling method overestimated power by as much as 8.85 percentage points."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---balanced-sampling-method---rq2",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---balanced-sampling-method---rq2",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - Balanced Sampling Method - RQ2",
+    "text": "Results - Balanced Sampling Method - RQ2"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---balanced-sampling-method---rq2-1",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---balanced-sampling-method---rq2-1",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - Balanced Sampling Method - RQ2",
+    "text": "Results - Balanced Sampling Method - RQ2"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---type-i-error-rate---rq3",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---type-i-error-rate---rq3",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - Type I Error Rate - RQ3",
+    "text": "Results - Type I Error Rate - RQ3"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---type-i-error-rate---rq3-1",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---type-i-error-rate---rq3-1",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - Type I Error Rate - RQ3",
+    "text": "Results - Type I Error Rate - RQ3"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#conclusions",
+    "href": "presentations/defense_slides/DefenseSlides.html#conclusions",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nI conclude that:\n\nThe power approximation formula is accurate when there are a small number of contrasts, but it can be inaccurate (overestimates power) in conditions with a larger number of contrasts and small degrees of freedom;\nIt is important to find reliable pilot data for sampling the number of the effect sizes and the sampling variances, as the accuracy of the formula depended on how closely the assumed distributions matched the data generating distributions; and\nThe Type I Error of the robust-Wald Test from a CHE working model was below the nominal error rate, especially in conditions with more contrasts and a small number of total studies.\n\n\n\n\nreplicated findings from Tipton and Pustejov.. 2015 joshi paper"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#limitations",
+    "href": "presentations/defense_slides/DefenseSlides.html#limitations",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Limitations",
+    "text": "Limitations\n\nAssumed that the effect sizes in each study and across studies were equally correlated\nDid not examine mis-specification of the between the simulated data and the approximation\nUsed one empirical distribution of \\(k_j\\) and \\(\\sigma_j^2\\) to validate the approximation\nResults will not translate to other effect size types like odds ratio without further assumptions\n\n\n\nData-generating model was the same as the model used for the approximation\n\nSampling correlation used in the data-generating process is different from the sampling correlation\nEmpirical Distribution used in approximation formula was the same as the data-generating model"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#future-directions",
+    "href": "presentations/defense_slides/DefenseSlides.html#future-directions",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Future Directions",
+    "text": "Future Directions\n\nModel-based degrees of freedom (or degrees of freedom for other robust tests) for study-level categorical moderators.\n\nDevelop power approximations for moderators other than study-level categorical moderators.\nValidate the approximation under other working models (i.e. \\(\\rho = 0\\) or \\(\\omega = 0\\)).\nEvaluate if the proposed approximation would work for cluster wild bootstrap test (Joshi et al. 2022).\n\n\n\nsuch as the Eigen-decomposition F-test or the Eigen-decomposition and transformation test.\nDue to the approximation being not performing well with more contrasts and small number of studies, try to…"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#acknowledgements",
+    "href": "presentations/defense_slides/DefenseSlides.html#acknowledgements",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\n\n\nCommittee members:\n\nS. Natasha Beretvas (Supervisor)\nJames E. Pustejovsky (co -Supervisor)\nTeresa D. Pigott\nTiffany A. Whittaker\nXiao Liu\n\nI also wanted to acknowledge Megha Joshi and Melissa Rodgers."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#references",
+    "href": "presentations/defense_slides/DefenseSlides.html#references",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "",
+    "text": "References\n\n\nJoshi, Megha, James E. Pustejovsky, and S. Natasha Beretvas. 2022. “Cluster Wild Bootstrapping to Handle Dependent Effect Sizes in Meta-Analysis with a Small Number of Studies.” Research Synthesis Methods 13 (4): 457–77. https://doi.org/10.1002/jrsm.1554.\n\n\nPustejovsky, James E., and Elizabeth Tipton. 2022. “Meta-Analysis with Robust Variance Estimation: Expanding the Range of Working Models.” Prevention Science (New York, Netherlands) 23 (3): 425–38. https://doi.org/10.1007/s11121-021-01246-3.\n\n\nVembye, Mikkel Helding, James Eric Pustejovsky, and Therese Deocampo Pigott. 2023. “Power Approximations for Overall Average Effects in Meta-Analysis With Dependent Effect Sizes.” Journal of Educational and Behavioral Statistics 48 (1): 70–102. https://doi.org/10.3102/10769986221127379.\n\n\nWilliams, Ryan, Martyna Citkowicz, David I. Miller, Jim Lindsay, and Kirk Walters. 2022. “Heterogeneity in Mathematics Intervention Effects: Evidence from a Meta-Analysis of 191 Randomized Experiments.” Journal of Research on Educational Effectiveness (Philadelphia) 15 (3): 584–634."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#extra-slides",
+    "href": "presentations/defense_slides/DefenseSlides.html#extra-slides",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Extra Slides",
+    "text": "Extra Slides"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---df-diagnostic",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---df-diagnostic",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - DF Diagnostic",
+    "text": "Results - DF Diagnostic"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#results---empirical-vs-stylized-sampling-method",
+    "href": "presentations/defense_slides/DefenseSlides.html#results---empirical-vs-stylized-sampling-method",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Results - Empirical vs Stylized Sampling Method",
+    "text": "Results - Empirical vs Stylized Sampling Method"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#che-rve",
+    "href": "presentations/defense_slides/DefenseSlides.html#che-rve",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "CHE-RVE",
+    "text": "CHE-RVE\n\nThe correlated-and-hierarchical effects (CHE) Model:\n\n\\[T_{ij} = \\mathbf{x}_{ij}\\boldsymbol{\\beta} + u_j + v_{ij} + e_{ij}\\]\n\n\\(Var(u_j) = \\tau^2\\), \\(Var(v_{ij}) = \\omega^2\\), \\(Var(e_{ij}) = \\sigma^2_j\\), and \\(Cor(e_{hj}, e_{ij}) = \\rho\\)\nRobust Variance Estimation (RVE):\n\n\\[\\mathbf{V}^R = \\mathbf{M}\\left[ \\sum_{j=1}^J \\mathbf{X}_j' \\mathbf{W}_j\\mathbf{A}_j\\mathbf{e}_j\\mathbf{e}_j'\\mathbf{A}_j'\\mathbf{W}_j\\mathbf{X}_j \\right]\\mathbf{M}\\]\n\n\nCHE is more comprehensive than other available models that account for dependence since it incorporates both correlated sampling errors and hierarchical dependence, which are both common in meta-analytic datasets. It models the between-study error, within-study error, the sampling error, and assumes a common correlation between sampling errors within a given study.\nworking model used to get good estimates of the regression coefficients. robust variance estimation or RVE can be used as an adjustment along side the working model to handle within-study dependence in effect size estimates when estimating the SEs of the \\(\\beta\\) coefficients of meta-regression models.\nwhere \\(\\mathbf{e}_j = \\mathbf{T}_j - \\mathbf{X}_j\\bm{\\hat{\\beta}}\\) is the vector of residuals for study \\(j\\) and \\(\\mathbf{A}_j\\) is a \\(k_j \\times k_j\\) CR2 adjustment matrix\nRVE does not require knowledge of the exact covariance structure between pairs of effect size estimates. Here is the equation for the RVE variance estimator. The variances of the meta-regression coefficients are estimated with sandwich estimators using the cross-product of observed residuals. to estimate the covariance between pairs of effect sizes rather than the known covariances.\nRVE methods can be implemented to maintain close-to-correct Type I error rates even if the CHE model is misspecified. &lt;&gt;"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#meta-regression-with-categorical-moderators",
+    "href": "presentations/defense_slides/DefenseSlides.html#meta-regression-with-categorical-moderators",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Meta-Regression with Categorical Moderators",
+    "text": "Meta-Regression with Categorical Moderators\n\nFor a no-intercept meta-regression model with a study-level categorical predictor with \\(C\\) categories:\n\\[T_{ij} =  \\mu_1  b_{j1} +, \\cdots, +   \\mu_{C} b_{jC} + u_j + v_{ij} + e_{ij},\\]\nwhere \\(b_{jc}\\) is a study-level dummy coded variable and \\(\\mu_{c}\\) is the average effect size for category \\(c\\) (or the regression coefficient).\nThe null hypothesis is \\(H_0: \\mu_1 = \\mu_2 = \\cdots = \\mu_C\\)\nI will use the HTZ-test to test the null hypothesis.\nWe derived a closed-form expression for this test statistic and its corresponding degrees of freedom, \\(\\eta_z\\)."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#study-level-meta-regression",
+    "href": "presentations/defense_slides/DefenseSlides.html#study-level-meta-regression",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Study-level Meta-Regression",
+    "text": "Study-level Meta-Regression\n\nMeta-regression model where the predictors vary at the study level but are constant within a given study.\nEstimation of \\(\\boldsymbol{\\hat{\\beta}}\\) under CHE: \\[\\boldsymbol{\\hat{\\beta}} = \\left( \\sum_{j=1}^J \\tilde{w}_j  \\mathbf{b}_j' \\mathbf{b}_j \\right)^{-1} \\left( \\sum_{j=1}^J\\tilde{w}_j  \\mathbf{b}_j' \\overline{T}_j \\right)\\] where \\(\\mathbf{b}_j\\) is a row vector of study-level categorical moderators, \\(x_{ij} = \\mathbf{b}_j\\) and \\(\\mathbf{X}_j = \\mathbf{1}_j \\mathbf{b}_j\\), \\(\\tilde{w}_j  = \\mathbf{1}_j' \\boldsymbol{W}_j \\mathbf{1}_j\\), \\(\\mathbf{1}_j\\) is a \\(k_j \\times 1\\) column vector, and $\nStudy-Level CHE Weights: \\[\\tilde{w}_j = \\frac{k_j}{k_j\\hat{\\tau}^2 + k_j\\rho\\sigma_j^2 +\\hat{\\omega}^2 + (1- \\rho)\\sigma_j^2}\\]"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#eta_z",
+    "href": "presentations/defense_slides/DefenseSlides.html#eta_z",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "\\(\\eta_z\\)",
+    "text": "\\(\\eta_z\\)\nHTZ test degrees of freedom for multiple categories:\n\\[\\eta_z = \\frac{C(C+1)}{2\\sum_{c=1}^C \\frac{1}{\\nu_c}\\left(1 - \\frac{1}{\\psi_c\\mathbf{W} } \\right)^2}\\] where \\(\\psi_c\\) is the expected value of \\(V^R\\) for each category, \\(\\frac{1}{W_c}\\), and \\(\\nu_c\\) is the degrees of freedom for each category: \\[ \\nu_c = \\left[ \\sum_{j = 1} ^{Jc} \\frac{w^2_{jc}}{ (W_c - w_{jc}) ^2} - \\frac{2}{W} \\sum_{j = 1} ^{Jc} \\frac{w_{jc}^3}{(W_c - w_{jc})^2} + \\frac{1}{W_c^2} \\left(\\sum_{j = 1} ^{Jc} \\frac{w_{jc}^2}{W-w_{jc}} \\right)^2 \\right]^{-1}\\]"
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#generating-design-matrix-mathbfx-and-meta-regression-coefficients-mu_c-for-simulated-data-1",
+    "href": "presentations/defense_slides/DefenseSlides.html#generating-design-matrix-mathbfx-and-meta-regression-coefficients-mu_c-for-simulated-data-1",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Generating Design Matrix, \\(\\mathbf{X}\\), and Meta-regression Coefficients, \\(\\mu_c\\) for Simulated Data",
+    "text": "Generating Design Matrix, \\(\\mathbf{X}\\), and Meta-regression Coefficients, \\(\\mu_c\\) for Simulated Data\n\nTo generate \\(\\mathbf{X}\\):\n\nuse the factors \\(C\\), \\(J_c\\), and the balance of the number of studies per category across the moderator\n\nTo generate \\(\\mu_c\\):\n\nuse the arithmetic means for the \\(k_j\\) and \\(\\sigma^2_j\\) obtained from Williams et al. (2022)\nusing \\(\\overline{k}_j\\), \\(\\overline{\\sigma}^2_j\\), \\(\\tau^2\\), \\(\\omega^2\\), and \\(\\rho\\), generate the study-level weights, \\(\\tilde{w}_{jc}\\)\nusing \\(\\tilde{w}_{jc}\\) and \\(C\\), find the degrees of freedom\ngiven the specified power neighborhood level, \\(\\tilde{w}_{jc}\\), the degrees of freedom, \\(C\\), and an \\(\\alpha\\)-level of \\(.05\\), generate the non-centrality parameter of the non-central F-distribution, \\(\\lambda\\), using numerical methods.\ngiven \\(f_c\\), \\(\\tilde{w}_{jc}\\), and \\(\\lambda\\) , find \\(\\zeta\\)\nUsing \\(\\zeta\\), \\(f_c\\), and \\(C\\), create a vector of coefficients (or \\(\\mu_c\\))."
+  },
+  {
+    "objectID": "presentations/defense_slides/DefenseSlides.html#patterns",
+    "href": "presentations/defense_slides/DefenseSlides.html#patterns",
+    "title": "Power Approximation for the Test of Study-Level Categorical Moderators in Meta-Regression with Dependent Effect Sizes",
+    "section": "Patterns",
+    "text": "Patterns"
   },
   {
     "objectID": "presentations/srsm2026/srsm2026.html#motivation",
