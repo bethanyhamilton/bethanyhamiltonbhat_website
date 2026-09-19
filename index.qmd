@@ -1,6 +1,4 @@
----
-title: "Bethany Hamilton Bhat"
----
+
 
 <iframe
   src="CV_BHBhat.pdf"
@@ -8,23 +6,13 @@ title: "Bethany Hamilton Bhat"
   frameborder="0">
 </iframe>
 
-<p style="text-align: center;">
-  <a href="CV_BHBhat.pdf" target="_blank">
-    Open PDF in a new window
-  </a>
-</p>
-
 
 ```{=html}
-
-
 
 <center>
 <a href="lilguy.qmd">
 <img src="images/flip.gif" border="0" width="450" height="41">
 </a>
 </center>
-
-
 
 ```
