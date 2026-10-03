@@ -157,8 +157,9 @@ $$\theta = P(Y>X)+\frac{1}{2}P(Y=X)$$
 
 
   * $\frac{1}{2}P(Y=X)$ term handles ties
-* Several parametric and non-parametric estimators: 
-  * CLES, AUC, Wilcoxon U, Concordance probability, Cliff's $\delta$
+* Several parametric and non-parametric estimators:
+  * Area Under the ROC Curve (AUC), concordance probability (c-statistic), constructed from Mann-Whitney U ($\hat{\theta} = \mathrm{U} /(n_1n_2)$), $\cdots$
+  * Common Language Effect Size (CLES)
 
 [@mcgrawCommonLanguageEffect1992a;@hanleyMeaningUseArea1982; @delongComparingAreasTwo1988a;@newson2002;@cliffDominanceStatisticsOrdinal1993a]{style="display: none;"} 
 
@@ -168,7 +169,8 @@ $$\theta = P(Y>X)+\frac{1}{2}P(Y=X)$$
 
 ## Estimating $\theta$: CLES
 
-  * Proposed by @mcgrawCommonLanguageEffect1992a under normality and homoscedasticity
+  * Proposed by @mcgrawCommonLanguageEffect1992a, and under normality and homoscedasticity: 
+  $\theta = \Phi\left(\frac{\mu_Y - \mu_X}{\sqrt{2 \sigma^2}}\right)$
   * Under these assumptions, $d$ completely determines any measure of overlap between two distributions
  
   $$\hat{\theta} = \Phi\left(\frac{d}{\sqrt{2}}\right), \quad \mathrm{var}(\hat{\theta}) = \frac{e^{-d^2 / 2}}{4\pi} \left(\frac{1}{n_1} + \frac{1}{n_2} + \frac{d^2}{2(n_1+n_2)} \right)$$

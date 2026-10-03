@@ -1047,7 +1047,8 @@ Bethany Hamilton Bhat and Wolfgang Viechtbauer
 <li><span class="math inline">\(\frac{1}{2}P(Y=X)\)</span> term handles ties</li>
 <li>Several parametric and non-parametric estimators:
 <ul>
-<li>CLES, AUC, Wilcoxon U, Concordance probability, Cliff’s <span class="math inline">\(\delta\)</span></li>
+<li>Area Under the ROC Curve (AUC), concordance probability (c-statistic), constructed from Mann-Whitney U (<span class="math inline">\(\hat{\theta} = \mathrm{U} /(n_1n_2)\)</span>), <span class="math inline">\(\cdots\)</span></li>
+<li>Common Language Effect Size (CLES)</li>
 </ul></li>
 </ul>
 <p><span style="display: none;"><span class="citation" data-cites="mcgrawCommonLanguageEffect1992a">McGraw and Wong (<a href="#/references" role="doc-biblioref" onclick>1992</a>)</span>;<span class="citation" data-cites="hanleyMeaningUseArea1982">Hanley and McNeil (<a href="#/references" role="doc-biblioref" onclick>1982</a>)</span>; <span class="citation" data-cites="delongComparingAreasTwo1988a">DeLong et al. (<a href="#/references" role="doc-biblioref" onclick>1988</a>)</span>;<span class="citation" data-cites="newson2002">Newson (<a href="#/references" role="doc-biblioref" onclick>2002</a>)</span>;<span class="citation" data-cites="cliffDominanceStatisticsOrdinal1993a">Cliff (<a href="#/references" role="doc-biblioref" onclick>1993</a>)</span></span></p>
@@ -1055,7 +1056,7 @@ Bethany Hamilton Bhat and Wolfgang Viechtbauer
 <section id="estimating-theta-cles" class="slide level2">
 <h2>Estimating <span class="math inline">\(\theta\)</span>: CLES</h2>
 <ul>
-<li>Proposed by <span class="citation" data-cites="mcgrawCommonLanguageEffect1992a">McGraw and Wong (<a href="#/references" role="doc-biblioref" onclick>1992</a>)</span> under normality and homoscedasticity</li>
+<li>Proposed by <span class="citation" data-cites="mcgrawCommonLanguageEffect1992a">McGraw and Wong (<a href="#/references" role="doc-biblioref" onclick>1992</a>)</span>, and under normality and homoscedasticity: <span class="math inline">\(\theta = \Phi\left(\frac{\mu_Y - \mu_X}{\sqrt{2 \sigma^2}}\right)\)</span></li>
 <li>Under these assumptions, <span class="math inline">\(d\)</span> completely determines any measure of overlap between two distributions</li>
 </ul>
 <p><span class="math display">\[\hat{\theta} = \Phi\left(\frac{d}{\sqrt{2}}\right), \quad \mathrm{var}(\hat{\theta}) = \frac{e^{-d^2 / 2}}{4\pi} \left(\frac{1}{n_1} + \frac{1}{n_2} + \frac{d^2}{2(n_1+n_2)} \right)\]</span></p>
